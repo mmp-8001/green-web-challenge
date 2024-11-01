@@ -1,7 +1,6 @@
 export default `
 <div>
-  <span>salam</span>
-  <span>salam</span>
+<button type="button" class="btn btn-primary">مشاهده پلن ها</button>
 
 </div>
 `;
