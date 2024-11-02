@@ -3,3 +3,12 @@
 @import "utility";
 @import "custom";
 @import "bootstrap";
+
+@include media-breakpoint-up(md) {
+  .w-md-75 {
+    width: 75% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+}

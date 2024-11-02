@@ -1,6 +1,8 @@
 {
   "domains": [
-    { "id": 1, "price": 125000, "title": ".info" },
+    { "id": 1, "price": 125000, "title": ".shop" },
+    { "id": 1, "price": 1000, "title": ".info" },
+    { "id": 1, "price": 1000, "title": ".info" },
     { "id": 1, "price": 1000, "title": ".info" },
     { "id": 1, "price": 1000, "title": ".info" },
     { "id": 1, "price": 1000, "title": ".info" },

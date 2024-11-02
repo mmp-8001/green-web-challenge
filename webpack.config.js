@@ -98,7 +98,6 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "")
     },
-    hot: true,
     compress: true,
     port: 9000
   }

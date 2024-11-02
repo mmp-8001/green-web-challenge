@@ -7,3 +7,5 @@ export const useFetch = (promise, ok = () => {}, err = () => {}) => {
       err(error);
     });
 };
+
+export const formatPrice = price => price.toLocaleString();
