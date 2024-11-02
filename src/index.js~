@@ -1,5 +1,0 @@
-// Remove the following lines, if you do not need any of Bootstrap's JavaScript features
-window.jQuery = $;
-window.$ = $;
-
-require("bootstrap");

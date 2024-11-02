@@ -1,3 +1,0 @@
-.space-x-3 > * + * {
-  margin-right: 8px;
-}
