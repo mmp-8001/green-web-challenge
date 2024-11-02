@@ -1,5 +1,6 @@
 // Webpack require:
 const header = require("./sections/header.js").default;
+const headerContent = require("./sections/head-content").default;
 
 // Export a function / promise / or a string:
 // This function has to return a string or promised string:
@@ -17,6 +18,7 @@ module.exports = function (templateParams) {
 <body>
   <div id="app">
     ${header}
+    ${headerContent}
   </div>
 </body>
 </html>

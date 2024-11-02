@@ -1,0 +1,77 @@
+/* Globals */
+body,
+html {
+  direction: rtl;
+  text-align: right;
+}
+
+.font-iran {
+  font-family: "IRANSansWeb", sans-serif !important;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+.btn {
+  font-family: "IRANSansWeb", serif;
+}
+
+.navbar a {
+  font-size: 15px;
+}
+
+// variables
+
+/* Globals */
+$font-family-base: "Yekan Bakh FaNum", sans-serif;
+$font-weight-semi-bold: 600;
+$body-bg: #ffffff;
+$body-color: #2b3149;
+$h1-font-size: 40px;
+$h3-font-size: 16px;
+
+/* Theme */
+$primary: #2533cc;
+$secondary: rgba(37, 51, 204, 0.08);
+$detail: #4c5c84;
+$light: #ffffff;
+
+.text-detail {
+  color: $detail;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* Input */
+$input-placeholder-color: #a3adc0;
+$input-padding-y: 20;
+
+/* Button */
+$btn-border-radius: 5px;
+$btn-font-size: 14px;
+.btn-secondary {
+  border-color: transparent !important;
+}
+
+.btn.h-40 {
+  height: 40px;
+}
+
+.btn.w-40 {
+  width: 40px;
+}
+
+/* Navbar */
+$navbar-light-color: #45557c;
+$navbar-padding-y: 20px;
+.navbar-shadow {
+  box-shadow: 0 10px 25px 0 rgba(198, 205, 218, 0.12);
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.nav-link {
+  display: flex !important;
+  align-items: center;
+}

@@ -80,3 +80,44 @@ This set of fonts are used in this project under the license: (.....)
   src: url('../fonts/yekan/woff/YekanBakhFaNum-ExtraBlack.woff') format('woff'),
   url('../fonts/yekan/woff2/YekanBakhFaNum-ExtraBlack.woff2') format('woff2');
 }
+
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('../fonts/iran/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
+  url('../fonts/iran/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('../fonts/iran/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
+  url('../fonts/iran/woff/IRANSansWeb(FaNum)_Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('../fonts/iran/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+  url('../fonts/iran/woff/IRANSansWeb(FaNum).woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('../fonts/iran/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
+  url('../fonts/iran/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('../fonts/iran/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
+  url('../fonts/iran/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

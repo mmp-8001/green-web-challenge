@@ -64,6 +64,13 @@ module.exports = {
         generator: {
           filename: "fonts/[hash][ext][query]"
         }
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[hash][ext][query]"
+        }
       }
     ]
   },
@@ -91,7 +98,6 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "")
     },
-    hot: true,
     compress: true,
     port: 9000
   }
