@@ -1,0 +1,7 @@
+.space-x-3 > * + * {
+  margin-right: 8px;
+}
+
+.border-transparent {
+  border-color: transparent !important;
+}
