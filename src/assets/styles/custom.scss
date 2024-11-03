@@ -27,9 +27,15 @@ html {
 $font-family-base: "Yekan Bakh FaNum", sans-serif;
 $font-weight-semi-bold: 600;
 $body-bg: #ffffff;
-$body-color: #2b3149;
-$h1-font-size: 40px;
-$h3-font-size: 16px;
+$body-color: #364163;
+$body-color-2: #4c5c84;
+$h1-font-size: 25px;
+$h2-font-size: 18px;
+$h3-font-size: 15px;
+$h5-font-size: 16px;
+.text-body-2 {
+  color: $body-color-2 !important;
+}
 
 /* Theme */
 $primary: #2533cc;
@@ -41,7 +47,6 @@ $warning: #fb9d04;
 .text-detail {
   color: $detail;
   font-weight: 400;
-  font-size: 18px;
 }
 $container-max-widths: (
   xl: 1366px
@@ -49,6 +54,7 @@ $container-max-widths: (
 
 /* Input */
 $input-placeholder-color: #a3adc0;
+$input-font-size: 15px;
 $input-padding-y: 20;
 
 /* Button */
@@ -56,14 +62,6 @@ $btn-border-radius: 5px;
 $btn-font-size: 14px;
 .btn-secondary {
   border-color: transparent !important;
-}
-
-.btn.h-40 {
-  height: 40px;
-}
-
-.btn.w-40 {
-  width: 40px;
 }
 
 /* Navbar */

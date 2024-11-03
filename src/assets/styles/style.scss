@@ -5,6 +5,9 @@
 @import "bootstrap";
 
 @include media-breakpoint-up(md) {
+  h1 {
+    font-size: 30px !important;
+  }
   .w-md-75 {
     width: 75% !important;
   }

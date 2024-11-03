@@ -40,11 +40,11 @@ function createLinks() {
 }
 
 export default /* HTML */ `
-  <section class="bg-light navbar-shadow">
+  <section class="bg-light fixed-top navbar-shadow">
     <header class="container">
-      <nav class="navbar d-flex align-items-center justify-content-start sticky-top px-0 navbar-expand-lg navbar-light">
+      <nav class="navbar d-flex align-items-center justify-content-start  px-0 navbar-expand-lg navbar-light">
         <button
-          class="navbar-toggler"
+          class="navbar-toggler p-2"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -75,7 +75,7 @@ export default /* HTML */ `
             <i class="icon-call" style="font-size: 20px"></i>
             <span class="sr-only">(شماره تماس: 05131775) ارتباط با ما</span>
           </a>
-          <button type="button" class="btn btn-primary px-4 whitespace-nowrap h-40">ورود | ثبت نام</button>
+          <button type="button" class="btn btn-primary px-lg-4 px-2 whitespace-nowrap h-40">ورود | ثبت نام</button>
         </div>
         <div class="collapse order-2 order-lg-1 flex-grow-1 flex-wrap navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav my-4 my-lg-0 pr-0 pr-lg-3">
@@ -85,4 +85,5 @@ export default /* HTML */ `
       </nav>
     </header>
   </section>
+  <div style="height: 80px"></div>
 `;

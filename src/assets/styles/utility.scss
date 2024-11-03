@@ -10,6 +10,27 @@
   margin-top: 5px;
 }
 
+.translate-y-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.h-40 {
+  height: 40px !important;
+}
+
+.h-48 {
+  height: 48px !important;
+}
+
+.w-48 {
+  width: 48px !important;
+}
+
+.w-40 {
+  width: 40px !important;
+}
+
 .divide-x > * + * {
   border-right: 1px solid #e9ebef;
 }
