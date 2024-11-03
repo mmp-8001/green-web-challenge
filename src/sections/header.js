@@ -6,8 +6,8 @@ const links = [
   { name: "هاست" },
   { name: "ثبت دامنه" },
   { name: "خدمات ابری" },
-  // { name: "دیگر خدمات" },
-  // { name: "ارتباط با ما" },
+  { name: "دیگر خدمات" },
+  { name: "ارتباط با ما" },
   { name: "پایگاه دانش" }
 ];
 
@@ -18,20 +18,20 @@ function createLinks() {
       link => /* HTML */ `
         <li class="nav-item dropdown font-weight-semi-bold">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link w-100 dropdown-toggle"
             href="#"
             id="navbarDropdownMenuLink"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            ${link.name}
-            <i class="icon-angle-down" style="font-size: 24px;color: #A3ADC0"></i>
+            <span>${link.name}</span>
+            <i class="icon-angle-down mr-auto mr-lg-0" style="font-size: 24px;color: #A3ADC0"></i>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu dir-rtl text-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">رندوم</a>
+            <a class="dropdown-item" href="#">رندوم</a>
+            <a class="dropdown-item" href="#">رندوم</a>
           </div>
         </li>
       `
@@ -42,10 +42,7 @@ function createLinks() {
 export default /* HTML */ `
   <section class="bg-light navbar-shadow">
     <header class="container">
-      <nav class="navbar sticky-top  navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">
-          <img src="${logo}" class="img-fluid" alt="..." />
-        </a>
+      <nav class="navbar d-flex align-items-center justify-content-start sticky-top px-0 navbar-expand-lg navbar-light">
         <button
           class="navbar-toggler"
           type="button"
@@ -57,14 +54,12 @@ export default /* HTML */ `
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand mr-lg-0 mr-2" href="/" aria-label="خانه">
+          <img src="${logo}" width="103" height="19" alt="لوگو ایران سرور" />
+        </a>
+        <div class="flex-grow-1 d-lg-none"></div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            ${createLinks()}
-          </ul>
-        </div>
-
-        <div class="d-flex align-items-center space-x-3">
+        <div class="d-flex order-1 order-lg-2 align-items-center space-x-3">
           <button
             type="button"
             class="btn text-primary h-40 d-flex align-items-center justify-content-center w-40 btn-secondary"
@@ -72,14 +67,20 @@ export default /* HTML */ `
             <i class="icon-en" style="font-size: 20px"></i>
             <span class="sr-only">تغییر زبان</span>
           </button>
-          <button
+          <a
+            href="tel:+985131775"
             type="button"
             class="btn text-primary h-40 d-flex align-items-center justify-content-center w-40 btn-secondary"
           >
             <i class="icon-call" style="font-size: 20px"></i>
-            <span class="sr-only">ارتباط با ما</span>
-          </button>
-          <button type="button" class="btn btn-primary px-4 h-40">ورود | ثبت نام</button>
+            <span class="sr-only">(شماره تماس: 05131775) ارتباط با ما</span>
+          </a>
+          <button type="button" class="btn btn-primary px-4 whitespace-nowrap h-40">ورود | ثبت نام</button>
+        </div>
+        <div class="collapse order-2 order-lg-1 flex-grow-1 flex-wrap navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav my-4 my-lg-0 pr-0 pr-lg-3">
+            ${createLinks()}
+          </ul>
         </div>
       </nav>
     </header>
