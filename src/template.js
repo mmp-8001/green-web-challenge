@@ -15,8 +15,8 @@ module.exports = function (templateParams) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ایران سرور</title>
+    <link rel="icon" type="image/x-icon" href="${require("../favicon.png")}">
+     <title>ایران سرور</title>
 
 </head>
 <body>
