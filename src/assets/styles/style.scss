@@ -23,6 +23,9 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .security-card {
+    font-size: 16px;
+  }
   .plan-card {
     box-shadow: 0 15px 25px 0 rgba(198, 205, 218, 0.12);
     padding: 80px 30px !important;

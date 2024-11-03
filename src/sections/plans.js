@@ -70,6 +70,6 @@ export default /* HTML */ `
         </div>
       </div>
     </section>
-    <div class="p-3"></div>
+    <div class="p-2"></div>
   </div>
 `;
