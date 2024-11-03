@@ -4,7 +4,7 @@ import { getDomains } from "../api/getDomains";
 
 export const staticDynamic = () => {
   $(document).ready(() => {
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper("#domains-swiper", {
       // Optional parameters
       loop: true,
       freeMode: true,
@@ -51,7 +51,7 @@ export const placeholder = /* HTML */ `
       <img src="${require("../assets/images/fire.svg")}" width="13" height="16" alt="" />
       <span class="font-weight-bold">داغ‌ترین پسوندها</span>
     </div>
-    <div class="swiper w-100 mr-5 position-relative marquee-slides">
+    <div id="domains-swiper" class="swiper w-100 mr-5 position-relative marquee-slides float">
       <div class="swiper-wrapper divide-x">
         <div class="swiper-slide d-flex justify-content-center">
           <div class="domain-placeholder skeleton-loader"></div>

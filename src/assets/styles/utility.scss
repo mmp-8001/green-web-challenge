@@ -23,7 +23,7 @@
 }
 
 .marquee-slides {
-  .swiper-wrapper {
+  &.float .swiper-wrapper {
     transition-timing-function: linear !important;
   }
   &:before {
@@ -38,8 +38,8 @@
     background: linear-gradient(
       90deg,
       rgb(255, 255, 255) 0%,
-      rgba(255, 255, 255, 0) 10%,
-      rgba(255, 255, 255, 0) 90%,
+      rgba(255, 255, 255, 0) 25%,
+      rgba(255, 255, 255, 0) 75%,
       rgb(255, 255, 255) 100%
     );
   }
@@ -84,3 +84,55 @@
   height: 24px;
 }
 
+.customer-card {
+  border-radius: 5px;
+  box-shadow: 0 30px 50px rgba(198, 205, 218, 0.2);
+  padding: 30px 0;
+  font-weight: 600;
+  font-size: 16px;
+
+  .count-up {
+    font-weight: 600;
+    font-size: 50px;
+    color: $primary;
+  }
+}
+
+.customer-bg {
+  background: rgb(240, 241, 244);
+  background: -moz-linear-gradient(180deg, rgba(240, 241, 244, 1) 0%, rgba(255, 255, 255, 0) 33%);
+  background: -webkit-linear-gradient(180deg, rgba(240, 241, 244, 1) 0%, rgba(255, 255, 255, 0) 33%);
+  background: linear-gradient(180deg, rgba(240, 241, 244, 1) 0%, rgba(255, 255, 255, 0) 33%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f1f4",endColorstr="#ffffff",GradientType=1);
+}
+
+.comment-card {
+  height: 200px;
+
+  .comment-section {
+    padding: 30px;
+    background-color: #f6f7f9;
+    text-align: right;
+    direction: rtl;
+    font-size: 16px;
+    border-radius: 5px;
+    height: calc(100% - 14px);
+  }
+
+  .arrow {
+    fill: #f6f7f9;
+    position: absolute;
+    right: 6%;
+    bottom: 1px;
+  }
+}
+
+.swiper-slide-active .comment-card {
+  .comment-section {
+    color: white;
+    background-color: $primary;
+  }
+  .arrow {
+    fill: $primary;
+  }
+}
