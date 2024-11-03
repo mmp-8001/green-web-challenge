@@ -172,9 +172,13 @@
 
 .plan-card {
   box-shadow: 0 15px 25px 0 rgba(198, 205, 218, 0.12);
-  padding: 30px;
+  padding: 40px 15px !important;
   background-color: white;
   border-radius: 5px;
+
+  p.items {
+    font-size: 14px;
+  }
 }
 
 .security-card {

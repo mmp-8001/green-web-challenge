@@ -8,10 +8,32 @@
   h1 {
     font-size: 30px !important;
   }
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
   .w-md-75 {
     width: 75% !important;
   }
   .w-md-50 {
     width: 50% !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .plan-card {
+    box-shadow: 0 15px 25px 0 rgba(198, 205, 218, 0.12);
+    padding: 80px 30px !important;
+    background-color: white;
+    border-radius: 5px;
+
+    p.items {
+      font-size: 14px;
+    }
+  }
+  .scale-up {
+    transform: scale(1.1);
   }
 }

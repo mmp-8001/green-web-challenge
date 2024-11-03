@@ -32,7 +32,7 @@ $body-color-2: #4c5c84;
 $h1-font-size: 25px;
 $h2-font-size: 18px;
 $h3-font-size: 15px;
-$h5-font-size: 16px;
+$h5-font-size: 13px;
 .text-body-2 {
   color: $body-color-2 !important;
 }
@@ -42,11 +42,15 @@ $primary: #2533cc;
 $secondary: rgba(37, 51, 204, 0.08);
 $info: #49a2f9;
 $detail: #4c5c84;
+$desc: #808da6;
 $light: #ffffff;
 $warning: #fb9d04;
 .text-detail {
   color: $detail;
   font-weight: 400;
+}
+.text-desc {
+  color: $desc;
 }
 $container-max-widths: (
   xl: 1366px
