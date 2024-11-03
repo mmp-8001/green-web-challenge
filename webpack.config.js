@@ -32,8 +32,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               importLoaders: 2,
-              sourceMap: true,
-              url: false
+              sourceMap: true
             }
           },
           {
@@ -58,21 +57,23 @@ module.exports = {
           }
         }
       },
+      { test: /\.html$/, loader: "html-loader" },
       {
-        test: /\.jsx$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-            plugins: ["@babel/plugin-syntax-jsx"]
-          }
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[hash][ext][query]"
         }
       },
-      { test: /\.html$/, loader: "html-loader" }
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[hash][ext][query]"
+        }
+      }
     ]
   },
-
 
   // Define used plugins
   plugins: [
@@ -89,13 +90,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/template.js",
-      filename: "index.html"
+      filename: "index.html",
+      clean: true
     })
   ],
   devServer: {
     static: {
       directory: path.join(__dirname, "")
     },
+    host: "0.0.0.0",
     compress: true,
     port: 9000
   }

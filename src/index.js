@@ -1,11 +1,15 @@
-// Remove the following lines, if you do not need any of Bootstrap's JavaScript features
-import Popper from "popper.js";
+import Swiper from "swiper";
+import "swiper/css";
+import { staticDynamic } from "./dynamic/domains";
+import { makeCustomerCount } from "./dynamic/customers-count";
+import { makeCustomerComment } from "./dynamic/customers-comment";
+
 window.jQuery = $;
 window.$ = $;
+window.Swiper = Swiper;
 
 require("bootstrap");
 
-// Remove this demo code, that's only here to show how the .env file works!
-if (process.env["HELLO"]) {
-  console.log(`Hello ${process.env.HELLO}!`);
-}
+staticDynamic();
+makeCustomerCount();
+makeCustomerComment();
