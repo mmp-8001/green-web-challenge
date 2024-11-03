@@ -279,3 +279,23 @@
     border-radius: 100%;
   }
 }
+
+.falling-arrow {
+  transform-origin: center;
+  animation: slideDown 2s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-1px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(5px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-1px);
+    opacity: 1;
+  }
+}
