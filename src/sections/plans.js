@@ -1,6 +1,6 @@
 export default /* HTML */ `
   <div class="plan-bg">
-    <div class="p-3"></div>
+    <div class="py-lg-5 py-3"></div>
     <section class="container ">
       <div class="row">
         <div class="col-12">

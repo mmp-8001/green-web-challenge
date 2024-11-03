@@ -62,7 +62,7 @@ export default /* HTML */ `
         <div class="d-flex order-1 order-lg-2 align-items-center space-x-3">
           <button
             type="button"
-            class="btn text-primary h-40 d-flex align-items-center justify-content-center w-40 btn-secondary"
+            class="btn d-none text-primary h-40 d-md-flex align-items-center justify-content-center w-40 btn-secondary"
           >
             <i class="icon-en" style="font-size: 20px"></i>
             <span class="sr-only">تغییر زبان</span>

@@ -1,4 +1,5 @@
 // Webpack require:
+const center = require("./sections/center").default;
 const security = require("./sections/security").default;
 const plans = require("./sections/plans").default;
 const customers = require("./sections/customers").default;
@@ -15,7 +16,7 @@ module.exports = function (templateParams) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Your Page Title | Relevant Keyword</title>
+    <title>ایران سرور</title>
 
 </head>
 <body>
@@ -24,6 +25,7 @@ module.exports = function (templateParams) {
     ${headerContent}
     ${plans}
     ${security}
+    ${center}
     ${customers}
   </div>
 </body>

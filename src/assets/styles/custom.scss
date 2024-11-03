@@ -3,6 +3,8 @@ body,
 html {
   direction: rtl !important;
   text-align: right !important;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .font-iran {

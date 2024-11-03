@@ -77,6 +77,14 @@ export const placeholder = /* HTML */ `
           <div class="domain-placeholder skeleton-loader"></div>
           <span class="sr-only">دامنه داغ</span>
         </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <div class="domain-placeholder skeleton-loader"></div>
+          <span class="sr-only">دامنه داغ</span>
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <div class="domain-placeholder skeleton-loader"></div>
+          <span class="sr-only">دامنه داغ</span>
+        </div>
       </div>
     </div>
   </div>

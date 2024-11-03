@@ -4,6 +4,12 @@
 @import "utility";
 @import "bootstrap";
 
+@include media-breakpoint-down(md) {
+  .marquee-slides.not:before {
+    display: none;
+  }
+}
+
 @include media-breakpoint-up(md) {
   h1 {
     font-size: 30px !important;
@@ -13,6 +19,9 @@
   }
   h3 {
     font-size: 18px !important;
+  }
+  h5 {
+    font-size: 16px !important;
   }
   .w-md-75 {
     width: 75% !important;
@@ -38,5 +47,23 @@
   }
   .scale-up {
     transform: scale(1.1);
+  }
+
+  .center-section {
+    padding: 40px 0;
+
+    .circle-content {
+      width: 308px;
+      height: 308px;
+      .content-1 {
+        font-size: 36px;
+      }
+      .content-2 {
+        font-size: 42px;
+      }
+      .content-3 {
+        font-size: 42px;
+      }
+    }
   }
 }
