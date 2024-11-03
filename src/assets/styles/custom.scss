@@ -1,8 +1,8 @@
 /* Globals */
 body,
 html {
-  direction: rtl;
-  text-align: right;
+  direction: rtl !important;
+  text-align: right !important;
 }
 
 .font-iran {
@@ -34,14 +34,18 @@ $h3-font-size: 16px;
 /* Theme */
 $primary: #2533cc;
 $secondary: rgba(37, 51, 204, 0.08);
+$info: #49a2f9;
 $detail: #4c5c84;
 $light: #ffffff;
-
+$warning: #fb9d04;
 .text-detail {
   color: $detail;
   font-weight: 400;
   font-size: 18px;
 }
+$container-max-widths: (
+  xl: 1366px
+);
 
 /* Input */
 $input-placeholder-color: #a3adc0;

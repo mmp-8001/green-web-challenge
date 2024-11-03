@@ -1,4 +1,6 @@
 // Webpack require:
+const security = require("./sections/security").default;
+const plans = require("./sections/plans").default;
 const customers = require("./sections/customers").default;
 const header = require("./sections/header.js").default;
 const headerContent = require("./sections/head-content").default;
@@ -20,6 +22,8 @@ module.exports = function (templateParams) {
   <div id="app">
     ${header}
     ${headerContent}
+    ${plans}
+    ${security}
     ${customers}
   </div>
 </body>
